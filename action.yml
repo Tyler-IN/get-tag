@@ -4,6 +4,14 @@ author: 'Oleg Tarasov'
 runs:
   using: 'node12'
   main: 'lib/main.js'
+inputs:
+  tagRegex:
+    description: 'Regex to tag against match'
+    required: false
+  tagRegexGroup: 
+    description: 'Regex group to capture'
+    required: false
+    default: 1
 outputs:
   tag:
     description: The tag name.
